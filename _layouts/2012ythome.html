@@ -8,8 +8,8 @@
 var yt = yt || {};yt.timing = yt.timing || {};yt.timing.tick = function(label, opt_time) {var timer = yt.timing['timer'] || {};if(opt_time) {timer[label] = opt_time;}else {timer[label] = new Date().getTime();}yt.timing['timer'] = timer;};yt.timing.info = function(label, value) {var info_args = yt.timing['info_args'] || {};info_args[label] = value;yt.timing['info_args'] = info_args;};yt.timing.info('e', "920912,925500,906049,920917,922401,920704,912806,924412,913558,912706");if (document.webkitVisibilityState == 'prerender') {document.addEventListener('webkitvisibilitychange', function() {yt.timing.tick('start');}, false);}yt.timing.tick('start');yt.timing.info('li','0');try {yt.timing['srt'] = window.gtbExternal && window.gtbExternal.pageT() ||window.external && window.external.pageT;} catch(e) {}if (window.chrome && window.chrome.csi) {yt.timing['srt'] = Math.floor(window.chrome.csi().pageT);}if (window.msPerformance && window.msPerformance.timing) {yt.timing['srt'] = window.msPerformance.timing.responseStart - window.msPerformance.timing.navigationStart;}    </script>
 
 
-  
-  <title>YouTube - Broadcast Yourself.</title>
+ 
+  <title>{{ page.youtube }}</title>
     
   <link rel="search" type="application/opensearchdescription+xml" href="https://www.youtube.com/opensearch?locale=en_US" title="YouTube Video Search">
 
@@ -71,7 +71,7 @@ if (window.yt.timing) {yt.timing.tick("ct");}    </script>
     <div id="masthead-user-bar-container" >
       <div id="masthead-user-bar">
         <div id="masthead-user">
-          <div id="masthead-user-display"><span id="masthead-user-wrapper"><button href="https://accounts.google.com/ServiceLogin?uilel=3&amp;service=youtube&amp;passive=true&amp;continue=http%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26feature%3Dsign_in_button%26nomobiletemp%3D1%26hl%3Den_US%26next%3D%252F&amp;hl=en_US&amp;ltmpl=sso" type="button" id="masthead-user-button" onclick=";window.location.href=this.getAttribute(&#39;href&#39;);return false;" class=" yt-uix-button yt-uix-button-text"  role="button"><span class="yt-uix-button-content">  <span id="masthead-user-image">
+          <div id="masthead-user-display"><span id="masthead-user-wrapper"><button href="#" type="button" id="masthead-user-button" onclick=";window.location.href=this.getAttribute(&#39;href&#39;);return false;" class=" yt-uix-button yt-uix-button-text"  role="button"><span class="yt-uix-button-content">  <span id="masthead-user-image">
     <span class="clip">
       <span class="clip-center">
           <img src="https://s.ytimg.com/yt/img/no_videos_140-vfl5AhOQY.png" alt="">
@@ -134,11 +134,8 @@ if (window.yt.timing) {yt.timing.tick("ct");}    </script>
     <div class="guide-container">
         <div id="guide-builder-promo">
       <h2>
-Sign in to add channels to your homepage
+{{ site.date }}
       </h2>
-      <div id="guide-builder-promo-buttons" class="signed-out">
-        <button href="https://accounts.google.com/ServiceLogin?uilel=3&amp;service=youtube&amp;passive=true&amp;continue=http%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26feature%3Dguide%26nomobiletemp%3D1%26hl%3Den_US%26next%3D%252Findex%253Ffeature%253Dsignin&amp;hl=en_US&amp;ltmpl=sso" type="button" class=" yt-uix-button yt-uix-button-dark" onclick=";window.location.href=this.getAttribute(&#39;href&#39;);return false;"  role="button"><span class="yt-uix-button-content">Sign In </span></button>
-      </div>
   </div>
   <div class="guide">
 
@@ -340,37 +337,11 @@ Spotlight
     </h3>
     <h2>{{ page.sptitle }}</h2>
     <p class="sidebar-module-description">
-      {{ page.spdesc }}
+      {{ content }}
     </p>
       <p class="sidebar-module-description">
 Presented by: {{ page.present }}
       </p>
-    <h3>
-Featured
-    </h3>
-    <ul>
-        <li class="video-list-item "><a href="/watch?v=21buTOHiHxs&amp;feature=g-feat" class="video-list-item-link yt-uix-sessionlink" data-sessionlink="ei=CMT7_4Ghr7ICFTIIIQodLyHMoQ%3D%3D&amp;feature=g-feat&amp;context=G2eb608bYFAAAAAAAAAA" ><span class="ux-thumb-wrap contains-addto "><span class="video-thumb ux-thumb yt-thumb-default-120 "><span class="yt-thumb-clip"><span class="yt-thumb-clip-inner"><img src="https://s.ytimg.com/yt/img/pixel-vfl3z5WfW.gif" alt="#NEGAS - Rockstar Poser (beaner-english)" data-thumb="https://i3.ytimg.com/vi/21buTOHiHxs/default.jpg" width="120" ><span class="vertical-align"></span></span></span></span><span class="video-time">2:41</span>
-
-
-  <button onclick=";return false;" title="Watch Later" type="button" class="addto-button video-actions addto-watch-later-button-sign-in yt-uix-button yt-uix-button-default yt-uix-button-short yt-uix-tooltip" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="21buTOHiHxs" role="button"><span class="yt-uix-button-content">  <img src="https://s.ytimg.com/yt/img/pixel-vfl3z5WfW.gif" alt="Watch Later">
- </span><img class="yt-uix-button-arrow" src="https://s.ytimg.com/yt/img/pixel-vfl3z5WfW.gif" alt=""></button>
-</span><span dir="ltr" class="title" title="#NEGAS - Rockstar Poser (beaner-english)">#NEGAS - Rockstar Poser (beaner-english)</span><span class="stat">by <span class="yt-user-name " dir="ltr">MrDonMakila</span></span><span class="stat view-count">  <span class="viewcount">69,378 views</span>
-</span></a></li>
-        <li class="video-list-item "><a href="/watch?v=wlsdxCl73Tk&amp;feature=g-feat" class="video-list-item-link yt-uix-sessionlink" data-sessionlink="ei=CMT7_4Ghr7ICFTIIIQodLyHMoQ%3D%3D&amp;feature=g-feat&amp;context=G2aa38b8YFAAAAAAAAAQ" ><span class="ux-thumb-wrap contains-addto "><span class="video-thumb ux-thumb yt-thumb-default-120 "><span class="yt-thumb-clip"><span class="yt-thumb-clip-inner"><img src="https://s.ytimg.com/yt/img/pixel-vfl3z5WfW.gif" alt="¿A qué edad los niños dejan el pecho?" data-thumb="https://i4.ytimg.com/vi/wlsdxCl73Tk/default.jpg" width="120" ><span class="vertical-align"></span></span></span></span><span class="video-time">3:20</span>
-
-
-  <button onclick=";return false;" title="Watch Later" type="button" class="addto-button video-actions addto-watch-later-button-sign-in yt-uix-button yt-uix-button-default yt-uix-button-short yt-uix-tooltip" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="wlsdxCl73Tk" role="button"><span class="yt-uix-button-content">  <img src="https://s.ytimg.com/yt/img/pixel-vfl3z5WfW.gif" alt="Watch Later">
- </span><img class="yt-uix-button-arrow" src="https://s.ytimg.com/yt/img/pixel-vfl3z5WfW.gif" alt=""></button>
-</span><span dir="ltr" class="title" title="¿A qué edad los niños dejan el pecho?">¿A qué edad los niños dejan el pecho?</span><span class="stat">by <span class="yt-user-name " dir="ltr">todofamilia</span></span><span class="stat view-count">  <span class="viewcount">1,611 views</span>
-</span></a></li>
-        <li class="video-list-item "><a href="/watch?v=v3uZdP3w7ZI&amp;feature=g-feat" class="video-list-item-link yt-uix-sessionlink" data-sessionlink="ei=CMT7_4Ghr7ICFTIIIQodLyHMoQ%3D%3D&amp;feature=g-feat&amp;context=G2505300YFAAAAAAAAAg" ><span class="ux-thumb-wrap contains-addto "><span class="video-thumb ux-thumb yt-thumb-default-120 "><span class="yt-thumb-clip"><span class="yt-thumb-clip-inner"><img src="https://s.ytimg.com/yt/img/pixel-vfl3z5WfW.gif" alt="Secreteando - Tráiler / Telemundo" data-thumb="https://i3.ytimg.com/vi/v3uZdP3w7ZI/default.jpg" width="120" ><span class="vertical-align"></span></span></span></span><span class="video-time">0:32</span>
-
-
-  <button onclick=";return false;" title="Watch Later" type="button" class="addto-button video-actions addto-watch-later-button-sign-in yt-uix-button yt-uix-button-default yt-uix-button-short yt-uix-tooltip" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="v3uZdP3w7ZI" role="button"><span class="yt-uix-button-content">  <img src="https://s.ytimg.com/yt/img/pixel-vfl3z5WfW.gif" alt="Watch Later">
- </span><img class="yt-uix-button-arrow" src="https://s.ytimg.com/yt/img/pixel-vfl3z5WfW.gif" alt=""></button>
-</span><span dir="ltr" class="title" title="Secreteando - Tráiler / Telemundo">Secreteando - Tráiler / Telemundo</span><span class="stat">by <span class="yt-user-name " dir="ltr">TLMDsecreteando</span></span><span class="stat view-count">  <span class="viewcount">2,570 views</span>
-</span></a></li>
-    </ul>
 
     </div>
 
