@@ -1,0 +1,1088 @@
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>tbs.com - TV Shows - Television Shows - very funny</title>
+<!-- begin metadata component -->
+<meta name="DESCRIPTION" content="TBS.com is the online home of Very Funny. With hilarious original series such as Conan, Lopez Tonight, Glory Daze, Are We There Yet?, Tyler Perry’s House of Payne, and Meet the Browns, as well as blockbuster movies and outrageous syndicated series including Family Guy, The Office, American Dad, Seinfeld and My Name Is Earl, we're your one-stop-shop for gutbusting full episodes, free online games and other comedic content!">
+<meta name="KEYWORDS" content="Free Online Games, Conan, Glory Daze, Lopez Tonight, Tyler Perry's House of Payne, Meet the Browns, Are We There Yet?, Family Guy, The Office, American Dad, Just for Laughs Chicago, Seinfeld, Everybody Loves Raymond, King Of Queens, Friends, Full Episodes, The Comedy Festival, Funny Quizzes, Mini Golf, Television Shows, TV The Comedy Festival Shows, Very Funny">
+<!-- end metadata component -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<!--[if IE]>
+<style>
+.arrowlistmenu ul{ line-height:16px;}
+.arrowlistmenu_signup ul li{ margin-bottom:-5px;}
+</style>
+<![endif]-->
+<script type="text/css">
+.blueMenu ul li { display: block; white-space: nowrap; overflow: hidden; }
+</script>
+<!--[if lt IE 7]>
+<script defer type="text/javascript" src="/resources/pngfix.js"></script>
+<![endif]-->
+<script type="text/javascript" src="http://i.cdn.turner.com/v5cache/TBS/Images/Static/V7/js/v5_swfobject.js"></script>
+<!-- Video Player below-->
+<!-- <script src="http://i.cdn.turner.com/xslo/cvp/js/cvp/cvp_1.0.js" language="javascript"></script> -->
+<script src="http://www.tbs.com/cvp/cvp.min.js" language="javascript"></script>
+<!-- ad server setup -->
+<script>
+<!--
+var cnnDocDomain='';
+if(location.hostname.indexOf('tbs.com')>0) { cnnDocDomain='tbs.com'; }
+if(location.hostname.indexOf('turner.com')>0) { cnnDocDomain='turner.com'; }
+if(cnnDocDomain) { document.domain = cnnDocDomain;}
+// -->
+</script>
+<script src="http://www.tbs.com/resources/cnn_adspaces.js" type="text/javascript"></script>
+<script type="text/javascript">
+cnnad_newTileIDGroup(new Array('970x66_spon', '300x250_rgt'));
+</script>
+<!-- cvp setup -->
+<script language="JavaScript" type="text/javascript">
+document.domain = "tbs.com";
+var newplayer = new CVP({
+id : 'cvp_1',
+width : '320',
+height : '240',
+flashVars : {
+contentId : '236047',
+context : 'hp',
+containerUrl : "http://www.tbs.com/cvp/container.xml",
+configUrl : "http://www.tbs.com/cvp/config.xml"
+},
+embed : {
+containerSwf : 'http://i.cdn.turner.com/tegwebapps/tbs/tbs-www/cvp/tbs_video.swf',
+expressInstallSwf : 'expressInstall.swf',
+options : {
+quality : 'high',
+bgcolor : '#000000',
+wmode : 'transparent',
+allowFullScreen : 'true',
+allowScriptAccess : 'always'
+}
+}
+});
+function loadPlayer() {
+newplayer.embed("playerarea");
+}
+</script>
+<script src="js/jquery_scrollable.js"></script>
+<script src="http://www.tnt.tv/tveverywhere/video/js/flash_detect_min.js"></script>
+<script>
+$(document).ready(function () {
+var zIndexNumber = 1000;
+$('div').each(function() {
+$(this).css('zIndex', zIndexNumber);
+zIndexNumber -= 2;
+});
+if(!FlashDetect.installed){
+$("#flashbackupContainer").css("display","block");
+$("#tbs_home_flash_teaser").css("display","none");
+}
+$("#tbs_featured_headerbackup .scrollable").scrollable({size: 1, clickable: false}).circular().navigator().autoscroll({autoplay: true, interval:6200});
+$("#tbs_featured_headerbackup li").mouseover( function () {
+$(this).css("background-position","6px 9px");
+});
+$("#tbs_featured_headerbackup li").mouseout( function () {
+$(this).css("background-position","0 9px");
+});
+// all the code for the Lopez Tonight Area
+// first get todays day
+// select the correct day or if its not monday - thursday
+var d=new Date();
+var weekday=new Array(7);
+weekday[0]="sunday";
+weekday[1]="monday";
+weekday[2]="tuesday";
+weekday[3]="wednesday";
+weekday[4]="thursday";
+weekday[5]="friday";
+weekday[6]="saturday";
+var todaysIs = weekday[d.getDay()];
+showLT(todaysIs);
+function hideLT() {
+$('.lopezContentContainer').css("display","none");
+$('.lopezThumbsContainer').css("background","url() no-repeat scroll 0 0 transparent");
+}
+function showLT(theDay) {
+hideLT();
+$('#'+theDay).css("display","block");
+var thumbDay = 'mon';
+switch(theDay)
+{
+case 'monday':
+thumbDay = 'mon';
+break;
+case 'tuesday':
+thumbDay = 'tues';
+break;
+case 'wednesday':
+thumbDay = 'wed';
+break;
+case 'thursday':
+thumbDay = 'thurs';
+break;
+default:
+thumbDay = 'mon';
+}
+$(".lopezThumbsContainer").mouseover( function () {
+hideLT();
+$(this).css("background","url(lopezTonightBackground.png) no-repeat scroll 0 0 transparent");
+var correctDay = $(this).attr("id");
+switch(correctDay)
+{
+case 'mon':
+thumbDay = 'monday';
+break;
+case 'tues':
+thumbDay = 'tuesday';
+break;
+case 'wed':
+thumbDay = 'wednesday';
+break;
+case 'thurs':
+thumbDay = 'thursday';
+break;
+default:
+thumbDay = 'monday';
+}
+$('#'+thumbDay).css("display","block");
+});
+changeLTBackground(thumbDay);
+}
+function changeLTBackground(theDay) {
+$('#'+theDay).css("background","url(lopezTonightBackground.png) no-repeat scroll 0 0 transparent");
+}
+});
+</script>
+<link rel="stylesheet" href="tbs_main.css" type="text/css" />
+<link rel="stylesheet" type="text/css" href="nav.css"/>
+<link rel="stylesheet" type="text/css" href="homecss.css"/>
+</head>
+<body onLoad="loadPlayer(); ">
+<div style="visibility: hidden; height: 1px; width: 1px; overflow-y: hidden;">
+<!-- Begin ad tag -->
+<script language= "JavaScript" type="text/javascript">
+ord=Math.random()*10000000000000000;
+document.write('<img src="http://ad.doubleclick.net/activity;src=1433270;dcnet=4575;boom=16716;sz=1x1;ord='+ ord +'?"width="1" height="1" border="0" alt="">');
+</script>
+<noscript>
+<img src="http://ad.doubleclick.net/activity;src=1433270;dcnet=4575;boom=16716;sz=1x1;ord=1?"width="1" height="1" border="0" alt="">
+</noscript>
+<!-- End ad tag -->
+</div>
+<div id="tbs_main_container">
+<div id="tbs_header_container2">
+<!-- ADSPACE: homepage/spon.970x66--> <div id="ad-384503" align="center" style="padding: 0; margin: 0; border: 0;"><script type="text/javascript">
+cnnad_createAd("384503","http://ads.tbs.com/html.ng/site=tbs&tbs_position=970x66_spon&tbs_rollup=homepage&params.styles=fs","66","970");
+</script></div>
+</div>
+<div id="tbs_header_container2" style="height: 115px;">
+<div id="tbs_logo_header">
+<a href="http://www.tbs.com" target="parent">
+<img src="ttst.png" alt="TTST very funi">
+</a>
+</div><!-- tbs_logo_header -->
+<div id="MSIB_Container_opa" >
+<div class="tonightontbs" ><div id="tonightontbs"> coming soon: <a href="http://www.tbs.com/shows/meetthebrowns/">{{ page.soon }}</a></div></div>
+<div class="tbsmsib_bodaycontainer" style="position: absolute; left: 345px; width: 340px;">
+<div id="navContainer">
+<script type="text/javascript" src="/processors/profileView/js/lib/proto/prototype.js"></script>
+<script type="text/javascript" src="/resources/jquery.js"></script>
+<script src="/processors/profileView/js/builder.js" type="text/javascript"></script>
+<script src="/processors/profileView/js/myUrls.js" type="text/javascript"></script>
+<script src="http://i.cdn.turner.com/v5cache/TBS/TBS04/resources/backpack.js" type="text/javascript"></script>
+<script language="JavaScript">
+function showLogin() {
+var cookies = getCookies();
+var adDocDomain = null;
+var data = location.hostname.split(".");
+if (data.length >= 2) {
+adDocDomain = (data[data.length-2] + "." + data[data.length-1]);
+document.domain = adDocDomain;
+}
+var gotoUrl = window.location.href;
+var realUrl = "https://audience.tbs.com" ;
+var dname = cookies["displayname"];
+var authid= cookies["authid"];
+var myTNTbookmark = document.getElementById("msib_container");
+if (authid != null && authid !="" && dname !=null && dname !="" && myTNTbookmark != null) {
+var profileUrl = '/processors/profile/myTbs.do';
+var logoutUrl = realUrl + '/services/tbs/flow/logout?url=' + gotoUrl;
+var welcome = Builder.node('a',{href:realUrl + '/services/tbs/flow/memberProfile', target: '_parent'},dname);
+var myTBS = Builder.node('span',{id:'themsibnavlink'});
+var myTBS1 = Builder.node('a',{href:profileUrl, target: '_parent'},'myTBS');
+var myTBS2 = Builder.node('span',{id:'msibspacer'},' | ');
+var myTBS3 = Builder.node('a',{id:'bookmarks',href:'',onclick:'viewUrls();return false;'},'bookmarks');
+var myTBS4 = Builder.node('span',{id:'msibspacer'},' | ');
+var myTBS5 = Builder.node('span',{id:'themsibnavlink'});
+var myTBS6 = Builder.node('a',{href:logoutUrl, target: '_parent'},'log out');
+var myTBS10 = Builder.node('span',{id:'msibwelcome'}, 'Welcome, ');
+myTBS10.appendChild(welcome);
+myTBS5.appendChild(myTBS6);
+myTBS.appendChild(myTBS1);
+myTBS.appendChild(myTBS2);
+myTBS.appendChild(myTBS3);
+myTNTbookmark.appendChild(myTBS10);
+myTNTbookmark.appendChild(myTBS);
+myTNTbookmark.appendChild(myTBS4);
+myTNTbookmark.appendChild(myTBS5);
+} else if (myTNTbookmark != null) {
+var loginUrl = realUrl + '/services/tbs/flow/login?url=' + gotoUrl;
+var registerUrl = realUrl + '/services/tbs/flow/register?url=' + gotoUrl;
+var myTBS = Builder.node('span',{id:'themsibnavlink'});
+var myTBS1 = Builder.node('a',{href:loginUrl, target: '_parent'},'Login');
+myTBS.appendChild(myTBS1);
+var myTBS2 = Builder.node('span',{id:'msibspacer'},' or ');
+var myTBS3 = Builder.node('span',{id:'themsibnavlink'});
+var myTBS4 = Builder.node('a',{href:registerUrl, target: '_parent'},'Register');
+myTBS3.appendChild(myTBS4);
+var myTBS5 = Builder.node('span',{id:'themsibnavlink'},' for myTBS');
+myTNTbookmark.appendChild(myTBS);
+myTNTbookmark.appendChild(myTBS2);
+myTNTbookmark.appendChild(myTBS3);
+myTNTbookmark.appendChild(myTBS5);
+}
+}
+function getNextHighestZindex(obj){
+var highestIndex = 0;
+var currentIndex = 0;
+var elArray = Array();
+if(obj){ elArray = obj.getElementsByTagName('*'); }else{ elArray = document.getElementsByTagName('*'); }
+for(var i=0; i < elArray.length; i++){
+if (elArray[i].currentStyle){
+currentIndex = parseFloat(elArray[i].currentStyle['zIndex']);
+}else if(window.getComputedStyle){
+currentIndex = parseFloat(document.defaultView.getComputedStyle(elArray[i],null).getPropertyValue('z-index'));
+}
+if(!isNaN(currentIndex) && currentIndex > highestIndex){ highestIndex = currentIndex; }
+}
+return(highestIndex+1);
+}
+function viewUrls() {
+var adDocDomain = null;
+var data = location.hostname.split(".");
+if (data.length >= 2) {
+adDocDomain = (data[data.length-2] + "." + data[data.length-1]);
+document.domain = adDocDomain;
+}
+var moreSection = document.getElementById("moreSection");
+try {
+var loginframe = window.parent.document.getElementById("loginframe");
+}catch(ex){
+alert("Error in update:"+ex);
+}
+if (moreSection && moreSection.style && moreSection.style.display == 'none') {
+var newzindex = getNextHighestZindex();
+document.getElementById("navframe").style.zIndex = newzindex;
+MyUrls.viewMyTntUrls('moreSection','myUrls');
+var viewUrl = document.getElementById("viewUrl");
+if (viewUrl) { viewUrl.disabled = 'true';}
+return;
+} else {
+document.getElementById("navframe").style.zIndex = 2000;
+loginframe.style.height='18px';
+moreSection.style.display='none';
+return;
+}
+}
+function saveUrl() {
+var moreDiv = document.getElementById("urlNode");
+if (moreDiv.childNodes.length == 22) {
+return;
+}else if (moreDiv.childNodes.length == 21) {
+var sysmsg = Builder.node('p','', 'You may bookmark up to 20 pages. Please visit your myTBS page to remove a bookmark.');
+moreDiv.appendChild(sysmsg);
+}else {
+MyUrls.saveThisUrl('moreSection','myUrls',top.document.title, encodeURIComponent(top.document.location));
+}
+}
+</script>
+<style type="text/css">
+#loginframe{height:18px;width:353px;}
+#navframe {height:18px; margin-top:-1px; text-align:center; }
+p {padding: 0px; margin: 0px;}
+a.marks:link {font: 11px arial; color: #b2c7f4; text-decoration: none;}
+a.marks:visited {font: 11px arial; color: #b2c7f4; text-decoration: none;}
+a.marks:hover {font: 11px arial; color: #b2c7f4; text-decoration: none;}
+#themsibnavlink a ,#themsibnavlink a:visited, #themsibnavlink a:active, #themsibnavlink1 a ,#themsibnavlink1 a:visited, #themsibnavlink1 a:active{text-decoration:none;color:#fff; font-size:11px;}
+#themsibnavlink a:link , #themsibnavlink1 a:link {text-decoration:none;color:#fff; font-size:11px;}
+#themsibnavlink a:hover , #themsibnavlink1 a:hover{text-decoration:none;color:#ffffcc;font-size:11px;}
+#msibwelcome a, .msibwelcome a:link {color: #fff; font-weight: bold;text-decoration: none;}
+#msibwelcome, .msibwelcome {margin-right:40px; color: #fff;}
+#msib_container {color:#fff;font-size:11px;font-weight:bold;padding:2px 0 0 6px; font-family:arial;}
+#myTNTbox { height: 18px; font: 11px arial; color: #c6d0d9;}
+#myTNTbox td {font: 11px arial; color: #c6d0d9;}
+#myTNTbox a:link, #myTNTbox a:visited {font: 11px arial; font-weight: bold; text-decoration: none;}
+#myTNTbox a:hover {font: 11px arial; font-weight: bold; text-decoration: underline;}
+#myTNTbox #urlNode a:link, #myTNTbox #urlNode a:visited {font: 11px arial; color: #0095d9; font-weight: normal; text-decoration: none;}
+#myTNTbox #urlNode a:hover {font: 11px arial; color: #0095d9; font-weight: normal; text-decoration: underline;}
+#moreSection {background-color:#A4D8F0;position:absolute;top:170px;width:350px;left:20px;}
+#saveThisPage {font: 12px arial; color: #fff}
+#urlNode p {font-weight:bold;}
+</style>
+<div id="navframe">
+<div id="myTNTbox">
+<div name="loginframe" id="loginframe">
+<div id="msib_container">
+<img src="smallwhitearrow.png" id="msibarrow">
+</div>
+<div id="moreSection" style="z-index:2002; display:none; background-color: #a4d8f0;" align="left">
+<br>
+<div style="z-index:2002;float: right; padding-right: 6px;">
+<span onclick="viewUrls();return false;" target="_top" style="cursor: pointer; font: 11px arial; color: #0095d9;">close</span>
+</div>
+<br>
+<div id="myUrls" style="z-index:2002; padding: 0px 0px 0px 10px; color:#0095d9;">
+</div>
+<br>
+<script type="text/javascript" lang="javascript" src="http://cdn.gigya.com/JS/gigya.js?services=socialize"></SCRIPT>
+<script type="text/javascript">
+var conf =
+{
+APIKey: '2_0vntUOh2GeWhU4GCKDhpNFt6KUwZUKCsYYJ0T1_gj0VrqCW6pKWTyOUUH2lHKur6'
+};
+function onLoad()
+{
+// get user info
+gigya.services.socialize.getUserInfo(conf,{callback:renderUI});
+// register for connect status changes
+gigya.services.socialize.addEventHandlers(conf, { onConnect:renderUI, onDisconnect:renderUI} );
+}
+</script>
+<script type="text/javascript">
+// Create and Publish User's Action
+// This method is associated with the "btnPublishAction" click
+function showShareUI2(usermessage, title, description, thumb) {
+// cleaning inputs
+var strToReplace = new RegExp( '\&apos;', 'g' );
+// Constructing a UserAction Object
+var act = new gigya.services.socialize.UserAction();
+// Setting the default user message
+// (will be presented as default text in the edit box on the Share UI)
+if (usermessage !== undefined && usermessage != '') {
+act.setUserMessage(usermessage);
+} else {
+act.setUserMessage("Added to myTBS.com. Check it out!");
+}
+// Setting the title and description
+// (will be presented in the preview on the Share UI)
+if (title !== undefined && title != '') {
+title = title.replace( strToReplace, "'");
+act.setTitle(title);
+} else {
+act.setTitle("");
+}
+if (description !== undefined && description != '') {
+description = description.replace( strToReplace, "'");
+act.setDescription(description);
+} else {
+act.setDescription("");
+}
+// Setting a link back to the publishing source
+act.setLinkBack("http://www.tbs.com/%3F");
+// Adding Action Link
+act.addActionLink("Share with your friends",
+"http://www.tbs.com/%3F");
+// Adding an image (will be presented in the preview on the Share UI)
+if (thumb !== undefined && thumb != '') {
+var image = {
+src: thumb,
+href: 'http://www.tbs.com/%3F',
+type: 'image'
+}
+} else {
+var image = {
+src: 'tbslogo_gigya.jpg',
+href: 'http://www.tbs.com/%3F',
+type: 'image'
+}
+}
+act.addMediaItem(image);
+// Parameters for the showShareUI method, including the UserAction object
+var params =
+{
+userAction: act, // The UserAction object enfolding the newsfeed data.
+enabledProviders: "Facebook, Twitter, MySpace, Yahoo, Google, Linkedin, messenger", // for Gigya beta
+onError: onError, // onError method will be summoned if an error occurs.
+onSendDone: onSendDone, // onError method will be summoned after Gigya finishes the publishing process.
+useHTML: true // Use the HTML implementation of the Plugin (rather then Flash implementation)
+};
+// Show the "Share" dialog
+gigya.services.socialize.showShareUI(conf, params);
+}
+// onError event handler
+function onError(event) {
+alert('An error has occured' + ': ' + event.status + '; ' + event.statusMessage);
+}
+// onSendDone event handler.
+// Displays in the status field, the list of providers to which the newsfeed has been
+// successfully published.
+function onSendDone(event)
+{
+document.getElementById('status').style.color = "white";
+document.getElementById('status').innerHTML =
+'The newsfeed has been posted to: '
++ event.providers;
+}
+</script>
+<div id="status"></div>
+<br>
+<div style="z-index:2002;background-color: #0095d9; padding: 0px; height: 24px; padding-top: 3px;">
+<img src="http://i.cdn.turner.com/v5cache/TBS/images/static/tbsmsib/savethispage.gif" border="0" align="left" width="14" height="24" valign="middle" />
+<a id="saveThisPage" href="javascript:void();" onclick="saveUrl();showShareUI2();return false;">Add this page</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+showLogin();
+</script>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+</div><!-- tbs_header_container -->
+<div id="tbs_primary_nav">
+<div id="topHeader">
+<style>
+#searchContainer {float:right; margin-right:5px;}
+#searchForm {padding:0;margin:0;}
+#search {padding: 0pt; width: 190px; margin-top: 6px;}
+#searchbtn {padding: 0pt; margin: 5px 0 0 0;}
+</style>
+<div class="blueMenu" class="clearfix" >
+<div id="searchContainer">
+<form method="get" action="http://www.tbs.com/search/searchresults.jsp" id="searchForm">
+<input name="query" type="text" id="search" />
+<input name="submit" type="image" id="searchbtn" align="top" src="search.png" border="0" value="search"/>
+</form>
+</div>
+<ul>
+<li class="first">&nbsp;</li>
+<li><a href="http://www.tbs.com/shows" class="maintopnav">shows
+<!--[if IE 7]><!-->
+</a>
+<!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+<ul id="shows_subnav">
+<li><a href="http://www.tbs.com/shows/sagawards.jsp" class="topnav noquery">sag awards</a></li>	
+<li><a href="http://www.tbs.com/shows/americandad.jsp" class="topnav noquery">american dad</a></li>
+<li><a href="http://www.tbs.com/shows/arewethereyet.jsp" class="topnav noquery">are we there yet?</a></li>
+<li><a href="http://www.teamcoco.com/" class="topnav noquery">conan</a></li>
+<li><a href="http://www.tbs.com/shows/familyguy.jsp" class="topnav noquery">family guy</a></li>
+<li><a href="http://www.tbs.com/shows/glorydaze/" class="topnav noquery">glory daze</a></li>
+<li><a href="http://www.lopeztonight.com" target="_blank" class="topnav noquery">lopez tonight</a></li>
+<li><a href="http://www.tbs.com/shows/meetthebrowns.jsp" class="topnav noquery">meet the browns</a></li>	
+<li><a href="http://www.tbs.com/shows/mynameisearl.jsp" class="topnav noquery">my name is earl</a></li>
+<li><a href="http://www.tbs.com/shows/theoffice.jsp" class="topnav noquery">the office</a></li> 
+<li><a href="http://www.tbs.com/shows/houseofpayne.jsp" class="topnav noquery">tyler perry's house of payne</a></li>
+<li><a href="http://www.tbs.com/shows.jsp" class="topnav noquery">all other shows</a></li>
+<li class="last">&nbsp;</li>
+</ul>
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+<li><a href="http://www.tbs.com/movies" class="maintopnav">movies
+<!--[if IE 7]><!-->
+</a>
+<!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+<ul id="movies_subnav">
+<li><a href="http://www.tbs.com/movies/dinnerandamovie.jsp" class="topnav noquery">dinner &amp; a movie</a></li>
+<li><a href="http://www.tbs.com/movies/movieandamakeover.jsp" class="topnav noquery">movie &amp; a makeover</a></li>
+<li><a href="http://www.tbs.com/movies/movieextra.jsp" class="topnav noquery">movie extra</a></li>
+<li class="last">&nbsp;</li>
+</ul>
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+<li><a href="http://www.tbs.com/video/index.jsp" class="maintopnav">video
+<!--[if IE 7]><!-->
+</a>
+<!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+<ul id="videos_subnav">
+<li><a href="http://dailyflog.tbs.com" class="topnav noquery">the daily flog</a></li>
+<li><a href="http://www.tbs.com/video/index.jsp?cid=195429" class="topnav noquery">today's riff</a></li>
+<li><a href="http://veryfunnyads.com" class="topnav noquery">veryfunnyads.com</a></li>
+<li class="last">&nbsp;</li>
+</ul>
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+<li><a href="http://www.tbs.com/schedule" class="maintopnav">schedule
+<!--[if IE 7]><!-->
+</a>
+<!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+<ul id="schedule_subnav">
+<li><a href="http://www.tbs.com/schedule.jsp" class="topnav noquery">daily schedule</a></li>
+<li><a href="http://www.tbs.com/schedule/movielistings.jsp" class="topnav noquery">upcoming movies</a></li>
+<li class="last">&nbsp;</li>
+</ul>
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+<li><a href="http://www.tbs.com/games" class="maintopnav">games
+<!--[if IE 7]><!-->
+</a>
+<!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+<ul id="games_subnav">
+<li><a href="http://www.tbs.com/officefun.jsp" class="topnav noquery">office fun</a></li>
+<li><a href="http://www.tbs.com/stories/storywide/0,,97597,00.html", "97597" class="topnav noquery">coffee breaker</a></li> 
+<li><a href="http://www.tbs.com/stories/storywide/0,,194289,00.html", "194289" class="topnav noquery">lopez tonight party train</a></li>	
+<li><a href="http://www.tbs.com/stories/story/0,,157025,00.html", "157025" class="topnav noquery">malik's busy day</a></li>
+<li><a href="http://www.tbs.com/stories/storywide/0,,177118,00.html", "177118" class="topnav noquery">meet the browns mini-golf</a></li>
+<li><a href="http://www.tbs.com/stories/story/0,,180993,00.html", "180993" class="topnav noquery">meet the browns picnic pair-up</a></li>
+<li><a href="http://www.tbs.com/stories/story/0,,231698,00.html", "231698" class="topnav noquery">it's totally '80s challenge</a></li>
+<li><a href="http://www.tbs.com/shows/glorydaze/fraternizer/", "" class="topnav noquery">fraternizer</a></li>
+<li><a href="http://www.tbs.com/stories/storywide/0,,234319,00.html", "234319" class="topnav noquery">turkey bowling</a></li>
+<li class="last">&nbsp;</li>
+</ul>
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+<li><a href="http://www.tbs.com/contests" class="maintopnav">sweepstakes
+<!--[if IE 7]><!-->
+</a>
+<!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+<ul id="shop_subnav">
+<li><a href="http://www.tbs.com/contests.jsp" class="topnav noquery">main</a></li>
+<li><a href="http://www.tbs.com/stories/story/0,,129804,00.html" class="topnav noquery">veryfunnyads.com sweepstakes</a></li>
+<li class="last">&nbsp;</li>
+</ul>
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+<li><a href="http://tbs.com/video" class="maintopnav">full&nbsp;episodes
+<!--[if IE 7]><!-->
+</a>
+<!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+<ul id="shows_subnav"> 
+<li><a href="http://www.tbs.com/video/index.jsp?cid=221070" class="topnav yesquery">are we there yet?</a></li>
+<li><a href="http://www.tbs.com/video/conan.jsp?cid=233111" class="topnav yesquery">conan</a></li>
+<li><a href="http://www.tbs.com/video/index.jsp?cid=239255" class="topnav yesquery">family guy</a></li>
+<li><a href="http://www.tbs.com/video/index.jsp?cid=235338" class="topnav yesquery">glory daze</a></li>
+<li><a href="http://www.tbs.com/video/index.jsp?cid=187129" class="topnav yesquery">meet the browns</a></li>
+<li><a href="http://www.tbs.com/video/index.jsp?cid=185089" class="topnav yesquery">my name is earl</a></li>
+<li><a href="http://www.tbs.com/video/index.jsp?cid=184297" class="topnav yesquery">the office</a></li>
+<li><a href="http://www.tbs.com/video/index.jsp?cid=121289" class="topnav yesquery">tyler perry's house of payne</a></li>
+<li><a href="http://www.tbs.com/video/index.jsp?cid=199372" class="topnav yesquery">the very funny show</a></li>
+<li><a href="http://www.tbs.com/video/index.jsp?cid=137544" target="_blank" class="topnav yesquery">seinfeld</a></li>
+<li><a href="http://www.tbs.com/video/index.jsp?cid=117685" target="_blank" class="topnav yesquery">just shoot me</a></li>
+<li><a href="http://www.tbs.com/video/index.jsp?cid=155110" target="_blank" class="topnav yesquery">married with children</a></li>
+<li class="last">&nbsp;</li>
+</ul>
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+<li><a href="http://www.tbs.com/shop" class="maintopnav">shop</a></li>
+<li><a href="http://www.tbs.com/mobile" class="maintopnav">mobile</a></li>
+</ul> 
+</div>
+<!--[if lte IE 6]>
+<script src="js/jquery.js"></script>
+<script type="text/javascript">
+$(function() {
+$('.blueMenu a').hover(function(){
+$(this).addClass('mainHover');
+}, function() {
+$(this).removeClass('mainHover');
+});
+$('.blueMenu ul li, .blueMenu ul ul ul').hover(function(){
+$(this).addClass('subHover');
+}, function() {
+$(this).removeClass('subHover');
+});
+});
+</script>
+<style type="text/css">
+.mainHover {
+background: #F37b21;
+behavior: url(http://www.tbs.com/resources/csshover2.htc);
+}
+.subHover {
+visibility:visible;
+}
+</style>
+<![endif]-->
+</div>
+</div><!-- tbs_primary_nav -->
+<div class="clear"></div>
+<div id="tbs_statusbar_wmsib" >
+</div><!-- tbs_statusbar_wmsib -->
+<div id="tbs_home_body_container">
+<div id="tbs_flashandvideo_container">
+<div id="tbs_home_flash_teaser">
+<!-- new import -->
+<div id="homepage_teaser_div" class="clearfla">
+<h1><a href='http://www.tbs.com/shows/arewethereyet.jsp'>all new tonight: <link url="http://www.tbs.com/shows/arewethereyet/"><![CDATA[visit the show site]]></link> <link url="http://www.tbs.com/video/index.jsp?cid=221070"><![CDATA[watch full episodes]]></link> <link url="http://www.tbs.com/stories/story/0,,219772,00.html"><![CDATA[play Are We There Yet? games]]></link><link url="http://www.tbs.com/shows/arewethereyet/video/index/?oid=217577"><![CDATA[watch exclusive videos]]></link> - all-new episodes tonight at 10/9c</a></h1><br>
+<h1><a href='http://teamcoco.com/'>tonight:: <link url="http://teamcoco.com/"><![CDATA[visit teamcoco.com]]></link><link url="http://teamcoco.com/content/live-coco-cam-behind-scenes-12111"><![CDATA[go behind the scenes of coco cam]]></link><link url="http://www.tbs.com/video/conan.jsp?oid=233887"><![CDATA[watch conan full episodes]]></link> <link url="http://teamcoco.com/content/aloe-blaccs-acoustic-dressing-room-performance"><![CDATA[see Aloe Blacc's acoustic performance]]></link> - tonight at 11/10c</a></h1><br>
+<h1><a href='http://lopeztonight.com'>tonight:: <link url="http://lopeztonight.com"><![CDATA[visit lopeztonight.com]]></link>
+<link url="http://www.lopeztonight.com/hi-5/index.php"><![CDATA[Catch the best of Lopez Tonight!]]></link><link url="http://www.lopeztonight.com/sayit/index.php?iref=LT:Homepage"><![CDATA[can't find the words? let Lopez say it!]]></link><link url="http://www.lopeztonight.com/behind_the_scenes/index.php?iref=homepage"><![CDATA[go behind the scenes of Lopez Tonight]]></link> - tonight at midnight/11c</a></h1><br>
+<h1><a href='http://www.tbs.com/shows/sagawards.jsp'>red carpet replay!: <link url="http://www.tbs.com/shows/sagawards.jsp"><![CDATA[visit the show site]]></link> <link url="http://www.tbs.com/stories/photogal/0,,165469,00.html"><![CDATA[see red carpet photos]]></link> <link url="http://www.tbs.com/video/index.jsp?cid=240764"><![CDATA[watch red carpet videos]]></link> <link url="http://www.tbs.com/stories/story/0,,201320,00.html"><![CDATA[see the list of winners]]></link> - relive the event</a></h1><br>
+<h1>Minimum Requirements Not Met</h1>
+<h2>Your computer needs the following upgrades in order to use this site:</h2>
+<ul>
+<li>Please download <a href="http://www.adobe.com/go/getflashplayer">Adobe Flash Player</a>.</li>
+<li>Please ensure JavaScript is enabled.</li>
+</ul>
+</div>
+<script language="JavaScript">
+var fo = new SWFObject('http://i.cdn.turner.com/v5cache/TBS/Flash/Static/2009REDESIGN/tbs_homePageFlash_v0.0.4.swf', "hompageFlash", "713", "405", "8", "#FFFFFF");
+fo.addParam("quality", "high");
+fo.addParam("allowScriptAccess", "always");
+fo.addParam("wmode", "transparent");
+fo.addVariable("xmlPath", "http://www.tbs.com/2009REDESIGN/tempslides.jsp?publishDate=");
+fo.write("homepage_teaser_div");
+</script>
+</div><!-- tbs_home_flash_teaser -->
+<div id="flashbackupContainer">
+<div id="flashbackupContent">
+<div id="tbs_featured_headerbackup">
+<script>
+var backgroundArray = new Array();
+$(document).ready(function () {
+backgroundArray.push('http://i.cdn.turner.com/v5cache/TBS/Images/Dynamic/i73/awty_family_54x36_052020101030.jpg');
+$('#scrollShowLogo0, #scrollShowTuneIn0, #scrollShowTitle0, #scrollShowBlurb0').click(function() {
+self.location = "http://www.tbs.com/shows/arewethereyet.jsp";
+});
+$('#scrollShowLogo0, #scrollShowTuneIn0, #scrollShowTitle0, #scrollShowBlurb0').mouseover(function() {
+$(this).css("cursor","pointer");
+});
+backgroundArray.push('http://i.cdn.turner.com/v5cache/TBS/Images/Dynamic/i78/conan_smile_54x36_111820100702.jpg');
+$('#scrollShowLogo1, #scrollShowTuneIn1, #scrollShowTitle1, #scrollShowBlurb1').click(function() {
+self.location = "http://teamcoco.com/";
+});
+$('#scrollShowLogo1, #scrollShowTuneIn1, #scrollShowTitle1, #scrollShowBlurb1').mouseover(function() {
+$(this).css("cursor","pointer");
+});
+backgroundArray.push('http://i.cdn.turner.com/v5cache/TBS/Images/Dynamic/i67/lopez_george_stare_54x36_011320100543.jpg');
+$('#scrollShowLogo2, #scrollShowTuneIn2, #scrollShowTitle2, #scrollShowBlurb2').click(function() {
+self.location = "http://lopeztonight.com";
+});
+$('#scrollShowLogo2, #scrollShowTuneIn2, #scrollShowTitle2, #scrollShowBlurb2').mouseover(function() {
+$(this).css("cursor","pointer");
+});
+backgroundArray.push('http://i.cdn.turner.com/v5cache/TBS/Images/Dynamic/i67/sag_trophy_54x36_011320100543.jpg');
+$('#scrollShowLogo3, #scrollShowTuneIn3, #scrollShowTitle3, #scrollShowBlurb3').click(function() {
+self.location = "http://www.tbs.com/shows/sagawards.jsp";
+});
+$('#scrollShowLogo3, #scrollShowTuneIn3, #scrollShowTitle3, #scrollShowBlurb3').mouseover(function() {
+$(this).css("cursor","pointer");
+});
+setTimeout("updateBackgroundThumbs()",300);
+});
+function updateBackgroundThumbs() {
+var anchors = $("#tbs_featured_headerbackup .navi a");
+$.each(anchors, function (index, value) {
+$( value ).css('background-image', 'url('+backgroundArray[index]+')');
+});
+}
+</script>
+<div class="navi"></div>
+<div class="scrollable" >
+<div class="items" > 
+<div class="scrollitem_container" >
+<div class="scrollitem_image" >
+<a href="http://www.tbs.com/shows/arewethereyet.jsp"><img src="http://i.cdn.turner.com/v5cache/TBS/Images/Dynamic/i72/awty_family_713x405_051220100706.jpg" width="713" height="405"></a>
+<div id="scrollShowLogo0" class="scrollShowLogo"><img src="http://i.cdn.turner.com/v5cache/TBS/Images/Dynamic/i72/awty_151x68_042720100657.png" width="151" height="68"></div>
+<div id="scrollShowTuneIn0" class="scrollShowTuneIn" style="text-align:center;">all-new episodes tonight at 10/9c</div>
+<div id="scrollShowTitle0" class="scrollShowTitle">all new tonight</div>
+<div id="scrollShowBlurb0" class="scrollShowBlurb">catch up online</div>
+<div class="optionContainter">	
+<ul> 
+<li><a href="http://www.tbs.com/shows/arewethereyet/" target="_self">visit the show site</a></li>
+<li><a href="http://www.tbs.com/video/index.jsp?cid=221070" target="_self">watch full episodes</a></li>
+<li><a href="http://www.tbs.com/stories/story/0,,219772,00.html" target="_self">play Are We There Yet? games</a></li>
+<li><a href="http://www.tbs.com/shows/arewethereyet/video/index/?oid=217577" target="_self">watch exclusive videos</a></li>
+</ul>	
+</div>
+</div> 
+</div>
+<div class="scrollitem_container" >
+<div class="scrollitem_image" >
+<a href="http://teamcoco.com/"><img src="http://i.cdn.turner.com/v5cache/TBS/Images/Dynamic/i78/conan_smile_713x405_111820100702.jpg" width="713" height="405"></a>
+<div id="scrollShowLogo1" class="scrollShowLogo"><img src="http://i.cdn.turner.com/v5cache/TBS/Images/Dynamic/i76/conan_logo_type_black_151x68_092420100314.png" width="151" height="68"></div>
+<div id="scrollShowTuneIn1" class="scrollShowTuneIn" style="text-align:center;">tonight at 11/10c</div>
+<div id="scrollShowTitle1" class="scrollShowTitle">tonight:</div>
+<div id="scrollShowBlurb1" class="scrollShowBlurb">Kobe Bryant, Camilla Belle</div>
+<div class="optionContainter">	
+<ul> 
+<li><a href="http://teamcoco.com/" target="_self">visit teamcoco.com</a></li>
+<li><a href="http://teamcoco.com/content/live-coco-cam-behind-scenes-12111" target="_self">go behind the scenes of coco cam</a></li>
+<li><a href="http://www.tbs.com/video/conan.jsp?oid=233887" target="_self">watch conan full episodes</a></li>
+<li><a href="http://teamcoco.com/content/aloe-blaccs-acoustic-dressing-room-performance" target="_self">see Aloe Blacc&#039;s acoustic performance</a></li>
+</ul>	
+</div>
+</div> 
+</div>
+<div class="scrollitem_container" >
+<div class="scrollitem_image" >
+<a href="http://lopeztonight.com"><img src="http://i.cdn.turner.com/v5cache/TBS/Images/Dynamic/i67/lopez_george_stare_713x405_011320100543.jpg" width="713" height="405"></a>
+<div id="scrollShowLogo2" class="scrollShowLogo"><img src="http://i.cdn.turner.com/v5cache/TBS/Images/Dynamic/i78/lopez_tonight_logo_new_151x68_111820100702.png" width="151" height="68"></div>
+<div id="scrollShowTuneIn2" class="scrollShowTuneIn" style="text-align:center;">tonight at midnight/11c</div>
+<div id="scrollShowTitle2" class="scrollShowTitle">tonight:</div>
+<div id="scrollShowBlurb2" class="scrollShowBlurb">Mindy Kaling, Derek Fisher</div>
+<div class="optionContainter">	
+<ul> 
+<li><a href="http://lopeztonight.com" target="_self">visit lopeztonight.com</a></li>
+<li><a href="http://www.lopeztonight.com/hi-5/index.php" target="_self">Catch the best of Lopez Tonight!</a></li>
+<li><a href="http://www.lopeztonight.com/sayit/index.php?iref=LT:Homepage" target="_self">can&#039;t find the words? let Lopez say it!</a></li>
+<li><a href="http://www.lopeztonight.com/behind_the_scenes/index.php?iref=homepage" target="_self">go behind the scenes of Lopez Tonight</a></li>
+</ul>	
+</div>
+</div> 
+</div>
+<div class="scrollitem_container" >
+<div class="scrollitem_image" >
+<a href="http://www.tbs.com/shows/sagawards.jsp"><img src="http://i.cdn.turner.com/v5cache/TBS/Images/Dynamic/i67/sag_trophy_713x405_011320100543.jpg" width="713" height="405"></a>
+<div id="scrollShowLogo3" class="scrollShowLogo"><img src="http://i.cdn.turner.com/v5cache/TBS/Images/Dynamic/i79/tbs_homepage_flash_SAGlogo_151x68_121520100731.png" width="151" height="68"></div>
+<div id="scrollShowTuneIn3" class="scrollShowTuneIn" style="text-align:center;">relive the event</div>
+<div id="scrollShowTitle3" class="scrollShowTitle">red carpet replay!</div>
+<div id="scrollShowBlurb3" class="scrollShowBlurb">watch clips, see photos</div>
+<div class="optionContainter">	
+<ul> 
+<li><a href="http://www.tbs.com/shows/sagawards.jsp" target="_self">visit the show site</a></li>
+<li><a href="http://www.tbs.com/stories/photogal/0,,165469,00.html" target="_self">see red carpet photos</a></li>
+<li><a href="http://www.tbs.com/video/index.jsp?cid=240764" target="_self">watch red carpet videos</a></li>
+<li><a href="http://www.tbs.com/stories/story/0,,201320,00.html" target="_self">see the list of winners</a></li>
+</ul>	
+</div>
+</div> 
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="tbs_video_teaser_container">
+<div id="tbs_video_teaser_discription_padding">
+<!-- <a href="http://www.tbs.com/video/conan/?iref=2227%3A-1" class="riffheader">Conan - weeknights at 11/10c</a> -->
+<a href="http://www.tbs.com/video/conan.jsp?iref=2158%3A-1&oid=240869">William H. Macy Visits Conan - watch the full show</a>
+</div>
+<div id="theConanCornerImage">
+<a href="http://www.tbs.com/video/conan.jsp?iref=2158%3A-1&oid=240869"><img id="ccimage" width="319" height="241" src="http://i.cdn.turner.com/v5cache/TBS/Images/Dynamic/i80/conan_williamhmacy_320x240_012420110230.jpg" border="0" alt="William H. Macy Visits Conan - watch the full show"></a>
+<a href="http://www.tbs.com/video/conan.jsp?iref=2158%3A-1&oid=240869"><img id="theConanCornerPlay" width="319" height="241" src="video_play_button.png" border="0" alt="William H. Macy Visits Conan - watch the full show"></a>
+</div>
+<div id="tbs_video_conanCorner">
+<div id="conanImage1" class="conanTeaserImage">
+<a href="http://teamcoco.com/blog/web-exclusive-video-happy-holidays-from-she-him-conan?iref=2746%3A-1"><img src="http://i.cdn.turner.com/v5cache/TBS/Images/Dynamic/i79/conan_shehim_70x80_010320110246.jpg" border="0" alt="Holiday Jam"></a>
+</div>
+<div id="" class="conanTeaser">
+<a href="http://teamcoco.com/blog/web-exclusive-video-happy-holidays-from-she-him-conan?iref=2746%3A-1">Watch Conan's web exclusive holiday jam with She & Him.</a>
+</div>
+<div id="conanImage2" class="conanTeaserImage">
+<a href="http://www.tbs.com/video/conan.jsp?oid=237436"><img src="http://i.cdn.turner.com/v5cache/TBS/Images/Dynamic/i79/conan_animated_70x80_121320100157.jpg" border="0" alt="Conan Animated"></a>
+</div>
+<div id="" class="conanTeaser">
+<a href="http://www.tbs.com/video/conan.jsp?oid=237436">Conan realizes his dream of becoming an animated superhero.</a>
+</div>
+<div class="clear"></div>
+</div>
+<img src="getmoreandmorevideos.png" id="getMoreAndMoreVideos" usemap="#getmoreMap" >
+<map name="getmoreMap" id="getmoreMap">
+<area shape="rect" coords="0,0,177,9" href="http://www.teamcoco.com" title="Get more at TEAMCOCO.com" />
+<area shape="rect" coords="236,0,316,9" href="http://www.teamcoco.com/video" title="more videos" />
+</map>
+</div><!-- video_teaser container -->
+<div class="clear"></div>
+</div><!-- tbs_flashandvideo_container -->
+<div id="tbs_featureteaserad_container">
+<div id="tbs_featureteaserad_spacer_row1">
+<!-- gamesv2.jsp has cicular plugin / games.jsp stops at last loaded -->
+<!-- Scrollable Jquery -->
+<script src="js/jquery_scrollable.js"></script>
+<script>
+$(document).ready(function() { $("#tbs_featured_games .scrollable").scrollable({size: 1, clickable: false}).circular().navigator();});
+</script>
+<!-- End Scrollable Jquery -->
+<div id="tbs_featured_games" >
+<!-- wrapper for navigator elements -->
+<div id="scrollbuttons">
+<div id="leftscroll" ><a class="prevPage browse left"></a></div>
+<div id="rightscroll"><a class="nextPage browse right"></a></div>
+<div class="navi"></div>
+</div>
+<!-- root element for scrollable -->
+<div class="scrollable" >
+<!-- root element for the items -->
+<div class="items" >
+<div class="scrollitem_container" >
+<div class="scrollitem_image" ><a href="http://www.lopeztonight.com/games/basketball.php?iref=2162%3AGames%3A0"><img src="http://i.cdn.turner.com/v5cache/TBS/Images/Dynamic/i77/lopeztonight_bball_315x162_101120100101.jpg" border=0></a></div>
+<div class="scrollitem_text" >Lopez Tonight </div>
+<div class="arrows">
+<a href="http://www.lopeztonight.com/games/basketball.php?iref=2162%3AGames%3A0">
+<img id="arrowby18" class="playnow" src="blank.gif">
+</a>
+</div>
+</div>
+<div class="scrollitem_container" >
+<div class="scrollitem_image" ><a href="http://www.tbs.com/stories/storywide/0,,179452,00.html?iref=2163%3AGames%3A1"><img src="http://i.cdn.turner.com/v5cache/TBS/Images/Dynamic/i67/office_firstDayFrenzy_315x162_011320100214.jpg" border=0></a></div>
+<div class="scrollitem_text" >The Office: first day frenzy</div>
+<div class="arrows">
+<a href="http://www.tbs.com/stories/storywide/0,,179452,00.html?iref=2163%3AGames%3A1">
+<img id="arrowby18" class="playnow" src="blank.gif">
+</a>
+</div>
+</div>
+<div class="scrollitem_container" >
+<div class="scrollitem_image" ><a href="http://www.tbs.com/stories/storywide/0,,185229,00.html?iref=2164%3A341564%3A2&amp;sdfd=w334e"><img src="http://i.cdn.turner.com/v5cache/TBS/Images/Dynamic/i67/HOP_playingSpades_315x162_011320100214.jpg" border=0></a></div>
+<div class="scrollitem_text" >House of Payne: playing spades</div>
+<div class="arrows">
+<a href="http://www.tbs.com/stories/storywide/0,,185229,00.html?iref=2164%3A341564%3A2&amp;sdfd=w334e">
+<img id="arrowby18" class="playnow" src="blank.gif">
+</a>
+</div>
+</div>
+<div class="scrollitem_container" >
+<div class="scrollitem_image" ><a href="/stories/story/0,,180870,00.html;jsessionid=233BF5EB3B907D934C5BBB17B9315652?iref=2165%3A341564%3A3"><img src="http://i.cdn.turner.com/v5cache/TBS/Images/Dynamic/i64/iphone_minigolf_315x162_110220090600.jpg" border=0></a></div>
+<div class="scrollitem_text" >free iPhone mini-golf</div>
+<div class="arrows">
+<a href="/stories/story/0,,180870,00.html;jsessionid=233BF5EB3B907D934C5BBB17B9315652?iref=2165%3A341564%3A3">
+<img id="arrowby18" class="playnow" src="blank.gif">
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="tbs_home_row2_teaser_container">
+<div id="lopezTonight">
+<div id="lopezTonightThumbs">
+<div id="mon" class="lopezThumbsContainer">
+<img id="thumb_monday" class="lopezThumb" src="" border="0">
+</div>
+<div id="tues" class="lopezThumbsContainer">
+<img id="thumb_tuesday" class="lopezThumb" src="" border="0">
+</div>
+<div id="wed" class="lopezThumbsContainer">
+<img id="thumb_wednesday" class="lopezThumb" src="" border="0">
+</div>
+<div id="thurs" class="lopezThumbsContainer">
+<img id="thumb_thursday" class="lopezThumb" src="" border="0">
+</div>
+<div class="clear"></div>
+<div id="theDaysLopez"></div>
+</div>
+<div id="monday" class="lopezContentContainer">
+<div class="lopezTonightTitle">Monday, Jan. 31</div>
+<div class="lopezTonightGuest">Kristen Bell,
+Jake Johnson,
+Slash</div>
+</div>
+<script> $('#thumb_monday').attr('src', 'http://www.lopeztonight.com/images/weekly2/monday_s.jpg');</script>
+<div id="tuesday" class="lopezContentContainer">
+<div class="lopezTonightTitle">Tuesday, Feb. 1</div>
+<div class="lopezTonightGuest">Kourtney Kardashian,
+DeSean Jackson,
+The Thermals</div>
+</div>
+<script> $('#thumb_tuesday').attr('src', 'http://www.lopeztonight.com/images/weekly2/tuesday_s.jpg');</script>
+<div id="wednesday" class="lopezContentContainer">
+<div class="lopezTonightTitle">Wednesday, Feb. 2</div>
+<div class="lopezTonightGuest">Mindy Kaling,
+Derek Fisher,
+Jasper Redd</div>
+</div>
+<script> $('#thumb_wednesday').attr('src', 'http://www.lopeztonight.com/images/weekly2/wednesday_s.jpg');</script>
+<div id="thursday" class="lopezContentContainer">
+<div class="lopezTonightTitle">Thursday, Feb. 3</div>
+<div class="lopezTonightGuest">Billy Gardell,
+Rachel Bilson,
+OK Go</div>
+</div>
+<script> $('#thumb_thursday').attr('src', 'http://www.lopeztonight.com/images/weekly2/thursday_s.jpg');</script>
+<a href="http://www.lopeztonight.com"><img id="lopezCalltoAction" src="getmoreatlopeztonight.png" border="0" alt="Get more at lopeztonight.com" title="Get more at lopeztonight.com"></a>
+</div>
+</div><!-- tbs_home_row2_teaser_container -->
+<div id="tbs_row2_banner">
+<!-- ADSPACE: homepage/rgt.300x250 --><div id="ad-540129" align="center" style="padding: 0; margin: 0; border: 0;"><script type="text/javascript"> 
+cnnad_createAd("540129","http://ads.tbs.com/html.ng/site=tbs&tbs_position=300x250_rgt&tbs_rollup=homepage&params.styles=fs","250","300");
+</script></div>
+<div class="advertisingimage_htl"></div>
+</div><!-- tbs_row2_banner -->
+<div class="clear"></div>
+</div>
+</div>
+<div id="tbs_teaseradteaser_container" >
+<div id="tbs_featureteaserad_spacer_row2">
+<div id="tbs_home_row3_teaser_container_1">
+<div id="tbs_home_row3_teaser1" >
+<div class="tbs_home_row3_teaser1_spacer">
+<div class="row3_teaser1_thumb" >
+<a href="http://www.tbs.com/shows/arewethereyet.jsp?iref=2170%3A-1"><img src="http://i.cdn.turner.com/v5cache/TBS/Images/Dynamic/i72/awty_100x100_042720100657.jpg" border="0" alt="Are We There Yet?"></a>
+</div>
+<div class="row3_teaser1_content">
+<div class="teaserTitle"><a href="http://www.tbs.com/shows/arewethereyet.jsp?iref=2170%3A-1">Are We There Yet?</a></div>
+<div class="teaserText">Wednesday at 10/9c, Terry Crews and Essence Atkins continue a second season of family hilarity in this hit comedy executive produced by Ice Cube.</div>
+</div>
+<div class="clear"></div>
+<div class="arrows">
+<a href="http://www.tbs.com/shows/arewethereyet.jsp?iref=2170%3A-1" class="arrows_text">
+visit the site
+</a>
+<a href="http://www.tbs.com/shows/arewethereyet.jsp?iref=2170%3A-1" >
+<img src="arrow_round_18x18.png" border="0" alt="visit the site">
+</a>
+</div>
+</div>
+</div>
+<div id="tbs_home_row3_teaser2_container" >
+<div id="ad125x125" >
+<!-- ADSPACE: homepage/lft.125x125 --><div id="ad-446096" align="center" style="padding: 0; margin: 0; border: 0;"><script type="text/javascript"> 
+cnnad_createAd("446096","http://ads.tbs.com/html.ng/site=tbs&tbs_position=125x125_lft&tbs_rollup=homepage&params.styles=fs","125","125");
+</script></div>
+<div class="advertisingimage_hbl"></div>
+</div>
+<div id="tbs_home_row3_teaser2">
+<div class="tbs_home_row3_teaser2_spacer" >
+<div class="row3_teaser2_thumb" >
+<a href="http://www.tbs.com/shows/theoffice.jsp?iref=2171%3A-1"><img src="http://i.cdn.turner.com/v5cache/TBS/Images/Dynamic/i38/Office_Cast_Image_6_80x100_081620070951.jpg" border="0" alt="The Office"></a>
+</div>
+<div class="row3_teaser2_content">
+<div class="teaserTitle"><a href="http://www.tbs.com/shows/theoffice.jsp?iref=2171%3A-1">The Office</a></div>
+<div class="teaserText">Want to rekindle an office romance? Send your flame our Labor of Love e-card!</div>
+</div>
+<div class="clear"></div>
+<div class="arrows">
+<a href="http://www.tbs.com/shows/theoffice.jsp?iref=2171%3A-1" class="arrows_text">
+see more
+</a>
+<a href="http://www.tbs.com/shows/theoffice.jsp?iref=2171%3A-1" >
+<img src="arrow_round_18x18.png" border="0" alt="see more">
+</a>
+</div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+<div id="tbs_row3_banner">
+<!-- ADSPACE: homepage/nfs.300x250 --><div id="ad-772759" align="center" style="padding: 0; margin: 0; border: 0;"><script type="text/javascript"> 
+cnnad_createAd("772759","http://ads.tbs.com/html.ng/site=tbs&tbs_position=300x250_nfs&tbs_rollup=homepage&params.styles=fs","250","300");
+</script></div>
+<div id = "adtext" style="float:left;"><img src="advertisement.png"/></div>
+</div>
+<div id="tbs_home_row3_teaser_container_2" >
+<div id="tbs_home_row3_teaser3">
+<div class="tbs_home_row3_teaser3_spacer" >
+<div class="row3_teaser3_thumb" >
+<a href="http://www.tbs.com/shows/sagawards.jsp?iref=2172%3A337506"><img src="http://i.cdn.turner.com/v5cache/TBS/Images/Dynamic/i80/sag_JenniferLawrence_80x100_013020111015.jpg" border="0" alt="SAG Awards"></a>
+</div>
+<div class="row3_teaser3_content">
+<div class="teaserTitle"><a href="http://www.tbs.com/shows/sagawards.jsp?iref=2172%3A337506">SAG Awards</a></div>
+<div class="teaserText">Did you miss Sunday's SAG Awards? Relive the event with red carpet video, exclusive photos and a list of all of the winners!</div>
+</div>
+<div class="clear"></div>
+<div class="arrows">
+<a href="http://www.tbs.com/shows/sagawards.jsp?iref=2172%3A337506" class="arrows_text">
+relive the event
+</a>
+<a href="http://www.tbs.com/shows/sagawards.jsp?iref=2172%3A337506" >
+<img src="arrow_round_18x18.png" border="0" alt="relive the event">
+</a>
+</div>
+</div>
+</div>
+<div id="tbs_home_row3_teaser4">
+<div class="tbs_home_row3_teaser4_spacer" >
+<div class="row3_teaser4_thumb" >
+<a href="https://audience.tbs.com/services/tbs/flow/newsletter"><img src="http://i.cdn.turner.com/v5cache/TBS/Images/Dynamic/i64/newsletter_96x120_110220090600.jpg" border="0" alt="sign up for funny emails!"></a>
+</div>
+<div class="row3_teaser4_content">
+<div class="teaserTitle"><a href="https://audience.tbs.com/services/tbs/flow/newsletter">sign up for funny emails!</a></div>
+<div class="arrowlistmenu_signup" >
+<ul>
+<li><a href="https://audience.tbs.com/services/tbs/flow/newsletter">Monday Morning Laughs</a></li>
+<li><a href="https://audience.tbs.com/services/tbs/flow/newsletter">TBS Weekly Newsletter</a></li>
+<li><a href="https://audience.tbs.com/services/tbs/flow/newsletter">VeryFunnyAds.com</a></li>
+<li><a href="https://audience.tbs.com/services/tbs/flow/newsletter">Your favorite show updates!</a></li>
+</ul>
+</div>
+</div>
+<div class="clear"></div>
+<div class="arrows">
+<a href="https://audience.tbs.com/services/tbs/flow/newsletter" class="arrows_text">
+sign up now
+</a>
+<a href="https://audience.tbs.com/services/tbs/flow/newsletter" >
+<img src="arrow_round_18x18.png" border="0" alt="sign up now">
+</a>
+</div>
+</div>
+</div>
+</div><!-- tbs_home_row3_teaser_container_2 -->
+<div class="clear"></div>
+</div><!-- tbs_featureteaserad_spacer -->
+</div><!-- tbs_teaseradteaser_container -->
+</div><!-- tbs_home_body_container -->
+<div id="tbs_main_footer">
+<script src="http://js.revsci.net/gateway/gw.js?csid=A09801"></script>
+<script language="JavaScript" type="text/javascript">
+//ADM
+cnnad_sendADMData();
+</script>
+<div id="tbs_gloablfooter_links">
+<a href="">home</a>
+| <a href="/shows.jsp">shows</a>
+| <a href="/movies.jsp">movies</a>
+| <a href="/sports.jsp">sports</a>
+| <a href="/schedule.jsp" rel="nofollow">schedule</a>
+| <a href="/video.jsp" rel="nofollow">videos</a>
+| <a href="/headquarters.jsp" rel="nofollow">humor</a>
+| <a href="/games.jsp">games</a>
+| <a href="/officefun.jsp">office fun</a>
+| <a href="/contests.jsp">contests</a>
+| <a href="/mobile.jsp">mobile</a>
+<br />
+<a href="http://www.tbs.com/stories/story/0,,119904,00.html" rel="nofollow">advertise with us</a>
+| <a href="/sitemap.jsp">sitemap</a>
+| <a href="/general/termsofuse.jsp" rel="nofollow">terms of use</a>
+| <a href="http://turner.tekgroup.com/section_display.cfm?section_id=20">press room</a>
+| <a href="/general/privacy.jsp" rel="nofollow">privacy policy </a>
+| <a href="http://support.tbs.com" rel="nofollow">contact us</a>
+| <a href="http://www.thetvboss.org" target="_blank" rel="nofollow">tv parental controls</a>
+| <a href="https://audience.tbs.com/services/tbs/flow/newsletter" rel="nofollow">newsletter </a>
+<br />
+<a href="http://www.veryfunnyads.com" target="_blank">very funny ads</a>
+| <a href="http://www.tnt.tv" target="_blank">TNT</a>
+| <a href="http://www.tcm.com" target="_blank">TCM</a>
+| <a href="http://www.trutv.com" target="_blank">truTV</a>
+| <a href="/rss">RSS</a> <a href="/rss"><img src="http://i.cdn.turner.com/v5cache/TBS/TBS04/images/static/xml_button_28x13.gif" width="28" height="13" hspace="0" vspace="0" border="0" align="absmiddle"></a> <br />
+</div>
+<div id="tbs_gloablfooter_cpywrt" >
+<a href="/stories/story/0,,119904,00.html" rel="nofollow">&copy;2011 Turner Broadcasting System, Inc.</a> A Time Warner Company. All Rights Reserved.
+<br>
+<img src="http://i.cdn.turner.com/v5cache/TBS/images/turner_logo.gif" align="middle" border="0"> Tbs.com is part of the Turner Entertainment Digital which is part of Turner Sports and Entertainment Digital Network..</a>
+<br><br></div>
+</div><!-- tbs_main_footer -->
+</div><!-- tbs_main_container -->
+<!-- DE Background Skin -->
+<!-- ADSPACE: homepage/BG_Skin -->
+<!--script src="homepage.wallpaper.snippet.v3.js"></script-->
+<!-- /DE Background Skin -->
+<!--start footer -->
+<img src="http://www.tbs.com/images/1.gif" alt="" id="TargetImageDE" name="TargetImageDE" width="1" height="1" onLoad="cnnad_getDEAdHeadCookie(this)">
+<!--end footer -->
+<!-- SiteCatalyst code version: H.15.1.
+Copyright 1997-2008 Omniture, Inc. More info available at
+http://www.omniture.com -->
+<script language="JavaScript" type="text/javascript" src="/files/omniture/www.js"></script>
+<script language="JavaScript" type="text/javascript" src="/files/omniture/wwwUtil.js"></script>
+<script language="JavaScript" type="text/javascript" src="/files/omniture/s_code_h15.1.js"></script>
+<script type="text/javascript">
+<!--
+// store all omniture related data in "s"
+populateMetricsData();
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//-->
+</script>
+<!-- BEGIN BAYNOTE INCLUDE -->
+<script type="text/javascript" src="http://i.cdn.turner.com/tegwebapps/tbs/tbs-www/files/baynote/baynote.js" ></script>
+<!-- END BAYNOTE INCLUDE -->
+<!--Click Tag-->
+<a href="http://ad.doubleclick.net/click;h=v2|3D50|0|0|%2a|v;234092955;0-0;0;58042191;31-1|1;39948688|39966475|1;;;pc=[TPAS_ID]%3fhttp://www.nicorette.com/promotions/nicorette-promotions.aspx?rotation=234092955&banner=58042191"></a>
+<!--Impression Tag-->
+<a href="http://ad.doubleclick.net/imp;v1;f;234092955;0-0;0;58042191;1|1;39948688|39966475|1;;cs=j;pc=[TPAS_ID];%3fhttp://ad.doubleclick.net/dot.gif?[timestamp]"></a>
+</body>
+</html>
